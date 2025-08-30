@@ -1,10 +1,9 @@
-import config
 import colorize
 import sys
 
 HELP_TEXT = f"""
-{colorize.colored(config.APP, colorize.BRIGHT_GREEN, bold=True)} — Robust tool for building and serving files with dynamic URLs
-{colorize.colored("Version", colorize.BRIGHT_RED, bold=True)} {config.VERSION}
+{colorize.colored("urlforge", colorize.BRIGHT_GREEN, bold=True)} — Robust tool for building and serving files with dynamic URLs
+{colorize.colored("Version", colorize.BRIGHT_RED, bold=True)} 1.0.0
 
 {colorize.colored('Commands:', colorize.BRIGHT_CYAN, bold=True)}
 
@@ -19,8 +18,6 @@ HELP_TEXT = f"""
     {colorize.colored('Serve files locally', colorize.RESET, bold=True)}
     {colorize.colored('input folder        Source directory containing files to serve', colorize.RESET, bold=True)}
 
-  {colorize.colored('stop', colorize.BRIGHT_YELLOW, bold=True)}
-    {colorize.colored('Stop local serve', colorize.RESET, bold=True)}
 """
 
 def Show():
